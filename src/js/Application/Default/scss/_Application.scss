@@ -1,0 +1,202 @@
+
+/************ 
+** Application Variables
+*************/
+
+// Import Application Elements
+#JobLosses{ 
+    
+    color:black; 
+    padding: 0rem;
+    margin: 0;
+
+    .notes{
+        border-top: 1px solid #dcdcdc;
+        font-family: 'Guardian Text Sans Web',Arial;
+        font-size: 12px;
+        color: #767676;
+        padding: 2px;
+        line-height: 24px;
+    }
+    .headline-container{
+        padding-top: 10px;
+        h3{
+            font-family: "Guardian Titlepiece";
+            font-size: 21px;
+            margin: 6px;
+        }
+    }
+
+  .bigNumbers{
+    display: flex;
+    width: 100%;
+    border-top: 2px solid #c70000;
+    .numWrapper{
+        padding: 6px 0 6px 6px;
+        width:50%;
+        border-bottom: 1px solid #dcdcdc;
+        border-right: 1px solid #dcdcdc;
+
+        p{
+            font-family: $FontFamilyHeader;
+            font-size: 14px;
+            margin: 0;
+        }
+        span{
+            font-family: "Guardian Titlepiece";
+            font-variant-numeric: lining-nums;
+            font-size: 48px;
+            line-height: 40px;
+        }
+    }
+    
+    #lost{ p,span{color: rgb(199, 0, 0)} }
+    #stoodDown{ p,span{color: rgb(156, 156, 156)} }
+  }
+   
+
+  .TableofContent{
+   
+    padding: 1.5rem 0;
+    font-family: $FontFamilyHeader;
+    color: #767676 !important;
+    text-align: left;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    border-bottom: 1px solid #dcdcdc;
+
+    div.display{
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+
+        padding: .2rem;
+        
+        div{
+    
+            flex-basis: 25%;
+            padding: 6px 20px 6px 0;
+            font-size: 12px;
+            line-height: 16px;
+            color: #676767;
+            border-bottom: 1px dotted #f1f1f1;
+            text-transform: capitalize;
+          
+        }
+        div.title{
+          display: flex;
+          flex-direction: column;
+            span+span{
+                  font-size: 10px;
+            }
+        }
+    }
+
+
+        div.TableHeader{
+            flex-direction: row;
+            div{
+                border-bottom: 2px solid #bdbdbd;
+                margin: 0 1px;
+                padding: 6px 20px 6px 0;
+                cursor: pointer;
+                position: relative;
+            }
+            div:hover{
+                background-color: #f9f9f9;
+            }
+            div:hover:before,div:hover:after{
+                opacity: 1;
+            }
+            div:before{    
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 4px solid #bdbdbd;
+                position: absolute;
+                right: 5px;
+                top: 13px;
+                opacity: 0;}
+            div:after{
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-bottom: 4px solid #bdbdbd;
+                position: absolute;
+                top: 8px;
+                margin-left: 10px;
+                right: 5px;
+                opacity: 0;
+            }
+           
+        }
+
+
+    div.scroll{ 
+            height: 300px; 
+            overflow-x: hidden; 
+            overflow-y: auto;
+            flex-direction: column;
+            padding: .2rem;
+            div{
+                flex-direction: row; 
+            }
+    }
+  }
+
+  
+
+        @media only screen  and (min-width : 1024px) and (max-width:1200px){
+           
+        }
+
+        @media only screen  and (min-width : 768px) and (max-width:1024px){
+           
+        }
+        
+        @media only screen  and (max-width : 768px) {
+            .TableofContent{
+                div.display{
+                    div{
+                        flex-basis: 33%;
+                    }
+                }
+                .Category{
+                    display: none;
+                }
+                .Date{ display: none;}
+            }
+
+
+
+                .bigNumbers{
+                    flex-direction: column;
+                    border:none;
+                    .numWrapper{
+                        width: 100%;
+                        span{
+                            font-size: 48px;
+                            line-height: 40px;
+                        }
+                    } 
+                } 
+             
+
+
+        }
+
+
+    .footer{
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #767676;
+        font-family: 'Guardian Text Sans Web', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    }
+}
+
+
