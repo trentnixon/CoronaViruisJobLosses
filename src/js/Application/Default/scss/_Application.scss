@@ -9,7 +9,8 @@
     color:black; 
     padding: 0rem;
     margin: 0;
-
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
     .notes{
         border-top: 1px solid #dcdcdc;
         font-family: 'Guardian Text Sans Web',Arial;
@@ -57,7 +58,7 @@
 
   .TableofContent{
    
-    padding: 1.5rem 0;
+    padding:0 0 1.5rem 0;
     font-family: $FontFamilyHeader;
     color: #767676 !important;
     text-align: left;

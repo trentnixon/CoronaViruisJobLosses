@@ -588,7 +588,9 @@ a {
 #JobLosses {
   color: black;
   padding: 0rem;
-  margin: 0; }
+  margin: 0;
+  background-color: #fff;
+  border-top: 1px solid #dcdcdc; }
   #JobLosses .notes {
     border-top: 1px solid #dcdcdc;
     font-family: 'Guardian Text Sans Web',Arial;
@@ -625,7 +627,7 @@ a {
     #JobLosses .bigNumbers #stoodDown p, #JobLosses .bigNumbers #stoodDown span {
       color: #9c9c9c; }
   #JobLosses .TableofContent {
-    padding: 1.5rem 0;
+    padding: 0 0 1.5rem 0;
     font-family: "TS3 Text Sans";
     color: #767676 !important;
     text-align: left;
